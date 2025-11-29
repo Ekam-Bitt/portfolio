@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { Analytics } from "@vercel/analytics/react";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -68,6 +69,7 @@ export default function RootLayout({
             {children}
             <Toaster />
             <ScrollToTop />
+            <Analytics />
           </SmoothScroll>
         </ThemeProvider>
       </body>

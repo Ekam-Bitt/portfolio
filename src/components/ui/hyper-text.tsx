@@ -23,6 +23,8 @@ export function HyperText({
     const ref = useRef<HTMLSpanElement>(null);
     const isInView = useInView(ref, { once: true });
 
+    const hasTriggered = useRef(false);
+
     const triggerAnimation = useCallback(() => {
         if (isAnimating) return;
         setIsAnimating(true);
@@ -51,8 +53,9 @@ export function HyperText({
     }, [duration, isAnimating, text]);
 
     useEffect(() => {
-        if (animateOnLoad && isInView) {
+        if (animateOnLoad && isInView && !hasTriggered.current) {
             triggerAnimation();
+            hasTriggered.current = true;
         }
     }, [isInView, animateOnLoad, triggerAnimation]);
 

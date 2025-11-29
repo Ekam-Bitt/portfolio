@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ekam Bitt Portfolio
+
+A premium, interactive developer portfolio built with the latest web technologies. Features a custom 3D Ethereum logo, vertex-based geometry, and a clean, responsive design.
+
+## Tech Stack
+
+-   **Framework**: Next.js 16 (App Router)
+-   **Language**: TypeScript
+-   **Styling**: Tailwind CSS v4
+-   **3D Graphics**: Three.js, React Three Fiber, React Three Drei
+-   **Animations**: Framer Motion
+-   **Fonts**: Geist Sans, Geist Mono, Space Grotesk
+-   **Linting**: ESLint 8 (with `eslint-config-next`)
 
 ## Getting Started
 
-First, run the development server:
+1.  **Install dependencies:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    ```bash
+    npm install
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.  **Run the development server:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ```bash
+    npm run dev
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+3.  **Linting:**
 
-To learn more about Next.js, take a look at the following resources:
+    To check for code quality issues:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    npx eslint .
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4.  **Build for production:**
 
-## Deploy on Vercel
+    ```bash
+    npm run build
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   **Interactive 3D Hero**: A vertex-accurate 3D Ethereum logo that responds to mouse movement.
+-   **Project Showcase**: 3D cards with hover effects and dynamic content.
+-   **Responsive Design**: Fully optimized for mobile, tablet, and desktop.
+-   **Dark Mode**: Built-in dark mode support.
+-   **SEO Optimized**: Includes dynamic sitemap, robots.txt, and comprehensive metadata.
+
+## Deployment
+
+This project is optimized for deployment on [Vercel](https://vercel.com).
+
+1.  Push your code to a Git repository.
+2.  Import the project into Vercel.
+3.  Vercel will automatically detect Next.js and deploy.

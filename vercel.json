@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/dermacure",
+      "destination": "https://dermacure-ai.vercel.app"
+    },
+    {
       "source": "/dermacure/:path*",
       "destination": "https://dermacure-ai.vercel.app/:path*"
     }
